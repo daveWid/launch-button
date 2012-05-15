@@ -1,0 +1,96 @@
+/**
+ * Simple styles for the Launch button
+ *
+ * @author  Dave Widmer <dave@davewidmer.net>
+ */
+body {
+	background-color: #F2F2F2;
+	padding:1em;
+	margin:0;
+	font-family: "Helvetica Neue",Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+
+#container {
+	margin: 0 auto;
+	text-align: center;
+	margin-top:1em;
+}
+
+#container h1 {
+	color:#666;
+	text-shadow:3px 3px 0 rgba(255,255,255, 0.75);
+}
+
+a[role="button"] {
+	font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+	text-transform: uppercase;
+	background-color:#139038;
+	display:inline-block;
+	box-shadow:inset 1px 1px 0 rgba(255,255,255,0.35), 2px 2px 3px rgba(0,0,0, 0.25);
+	text-align:center;
+	text-decoration: none;
+	cursor: pointer;
+	overflow:visible;
+	padding: 0.4em 1em;
+	font-size:2em;
+	border:1px solid rgba(0,0,0,0.2);
+	color:#FFF;
+	text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+	background-image: -moz-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
+	background-image: -webkit-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
+	background-image: -o-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
+	background-image: -ms-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
+	line-height:1.5;
+}
+
+a[role="button"]:focus,
+a[role="button"]:hover {
+	text-decoration:none;
+}
+
+a[role="button"]:active {
+	position:relative;
+	top:1px;
+	box-shadow:inset 0 0 5px 2px rgba(0,0,0,0.2), inset 1px 1px 0 rgba(255,255,255,0.3);
+}
+
+@-webkit-keyframes greenPulse {
+	from { background-color: #139038; }
+	50% { background-color: #0D6327; }
+	to { background-color: #139038; }
+}
+
+@-moz-keyframes greenPulse {
+	from { background-color: #139038; }
+	50% { background-color: #0D6327; }
+	to { background-color: #139038; }
+}
+
+a[role="button"].pulse {
+	-webkit-animation-name: greenPulse;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in;
+	-moz-animation-name: greenPulse;
+	-moz-animation-duration: 4s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in;
+}
+
+#output {
+	margin-top:2em;
+	padding:0.5em 1em;
+	text-align:left;
+	display:none;
+}
+#output.success{
+	border:1px dotted #0D6327;
+	background-color: #E9F5E6;
+	color: #0D6327;
+}
+#output.error {
+	border: 1px dotted #6E0E0D;
+	background-color: #FFEBEB;
+	color: #6E0E0D;
+}

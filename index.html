@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Launch Button</title>
+	<meta charset="utf-8">
+	<link href="style.css" type="text/css" rel="stylesheet" media="all" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Project Title</h1>
+		<a href="launch.php" role="button" class="pulse">Launch</a>
+		<div id="output"></div>
+	</div>
+
+	<script>
+		var output = $("#output");
+
+		$("a.pulse").on("click", function(e){
+			e.preventDefault();
+			output.show().addClass("loading").html("Loading...")
+
+			$.ajax({
+				url: this.href,
+				type: "GET",
+				dataType:"json",
+				success: function(response){
+					var cssClass = response.success === true ? "success" : "error";
+					output.html(response.body).removeClass("loading").addClass(cssClass);
+				}
+			});
+		});
+	</script>
+</body>
+</html>
