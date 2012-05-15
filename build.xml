@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Launch Button" default="package" basedir=".">
+	<target name="package">	
+		<zip destfile="launch.zip">
+			<fileset dir="${project.basedir}/">
+				<include name="**/**" />
+
+				<exclude name=".DS_Store" />
+				<exclude name=".gitignore" />
+				<exclude name=".git/**" />
+				<exclude name="build.xml" />
+			</fileset>
+		</zip>
+	</target>
+</project>
