@@ -29,6 +29,10 @@ button doesn't get pushed to your live site!
 
 This launch button is licensed under [Creative Commons 0](http://creativecommons.org/publicdomain/zero/1.0/). 
 
+## Background Pattern
+
+The background pattern was taken from [Subtle Patterns](http://subtlepatterns.com/?p=1222).
+
 ----
 
-Developed by [Dave Widmer](http://www.davewidmer.net)
+Developed by [Dave Widmer](dwidmer@bgsu.edu)

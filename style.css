@@ -9,17 +9,18 @@ body {
 	margin:0;
 	font-family: "Helvetica Neue",Helvetica, Arial, sans-serif;
 	font-size:14px;
+	background-image: url('subtle_stripes.png');
 }
 
 #container {
 	margin: 0 auto;
 	text-align: center;
-	margin-top:1em;
 }
 
 #container h1 {
 	color:#666;
 	text-shadow:3px 3px 0 rgba(255,255,255, 0.75);
+	margin-top:0;
 }
 
 a[role="button"] {
@@ -82,7 +83,6 @@ a[role="button"].pulse {
 	margin-top:2em;
 	padding:0.5em 1em;
 	text-align:left;
-	display:none;
 }
 #output.success{
 	border:1px dotted #0D6327;
@@ -93,4 +93,20 @@ a[role="button"].pulse {
 	border: 1px dotted #6E0E0D;
 	background-color: #FFEBEB;
 	color: #6E0E0D;
+}
+
+#logo {
+	position:absolute;
+	bottom:1em;
+	right:1em;
+}
+
+@media screen and (max-width: 480px){
+	#logo {
+		position:relative;
+		bottom:inherit;
+		right:inherit;
+		margin-top:1em;
+	}
+
 }
