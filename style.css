@@ -38,8 +38,10 @@ a[role="button"] {
 	border:1px solid rgba(0,0,0,0.2);
 	color:#FFF;
 	text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
-	background-image: -moz-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
-	background-image: -webkit-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
+	background-image: -moz-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%),
+					  -moz-repeating-linear-gradient(135deg,transparent, transparent 10px, rgba(255,255,255,.1) 10px, rgba(255,255,255,.1) 20px);
+	background-image: -webkit-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%),
+					  -webkit-repeating-linear-gradient(135deg,transparent, transparent 10px, rgba(255,255,255,.1) 10px, rgba(255,255,255,.1) 20px);
 	background-image: -o-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
 	background-image: -ms-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
 	line-height:1.5;
