@@ -9,17 +9,18 @@ body {
 	margin:0;
 	font-family: "Helvetica Neue",Helvetica, Arial, sans-serif;
 	font-size:14px;
+	background-image: url('subtle_stripes.png');
 }
 
 #container {
 	margin: 0 auto;
 	text-align: center;
-	margin-top:1em;
 }
 
 #container h1 {
 	color:#666;
 	text-shadow:3px 3px 0 rgba(255,255,255, 0.75);
+	margin-top:0;
 }
 
 a[role="button"] {
@@ -37,8 +38,10 @@ a[role="button"] {
 	border:1px solid rgba(0,0,0,0.2);
 	color:#FFF;
 	text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
-	background-image: -moz-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
-	background-image: -webkit-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
+	background-image: -moz-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%),
+					  -moz-repeating-linear-gradient(135deg,transparent, transparent 10px, rgba(255,255,255,.1) 10px, rgba(255,255,255,.1) 20px);
+	background-image: -webkit-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%),
+					  -webkit-repeating-linear-gradient(135deg,transparent, transparent 10px, rgba(255,255,255,.1) 10px, rgba(255,255,255,.1) 20px);
 	background-image: -o-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
 	background-image: -ms-linear-gradient(top, transparent 0%, transparent 1%, rgba(255,255,255,0.4) 1%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 100%);
 	line-height:1.5;
@@ -82,7 +85,6 @@ a[role="button"].pulse {
 	margin-top:2em;
 	padding:0.5em 1em;
 	text-align:left;
-	display:none;
 }
 #output.success{
 	border:1px dotted #0D6327;
@@ -93,4 +95,20 @@ a[role="button"].pulse {
 	border: 1px dotted #6E0E0D;
 	background-color: #FFEBEB;
 	color: #6E0E0D;
+}
+
+#logo {
+	position:absolute;
+	bottom:1em;
+	right:1em;
+}
+
+@media screen and (max-width: 480px){
+	#logo {
+		position:relative;
+		bottom:inherit;
+		right:inherit;
+		margin-top:1em;
+	}
+
 }

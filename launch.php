@@ -5,17 +5,17 @@ $response = array(
 	'body' => ""
 );
 
-// Grab the phing deploy output.
-$file = realpath("..").DIRECTORY_SEPARATOR."build.xml";
+chdir("..");
+$dir = getcwd().DIRECTORY_SEPARATOR;
 
-if ( ! is_file($file))
+if ( ! is_file($dir."build.xml"))
 {
 	$response['success'] = false;
 	$response['body'] = "&#10006; build.xml not found.";
 }
 else
 {
-	$command = "phing -f {$file} deploy";
+	$command = "phing deploy";
 	$output = array();
 	$return = null;
 
