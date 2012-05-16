@@ -70,4 +70,4 @@ The background pattern was taken from [Subtle Patterns](http://subtlepatterns.co
 
 ----
 
-Developed by [Dave Widmer](dwidmer@bgsu.edu)
+Developed by [Dave Widmer](http://www.davewidmer.net)
