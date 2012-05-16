@@ -96,19 +96,3 @@ a[role="button"].pulse {
 	background-color: #FFEBEB;
 	color: #6E0E0D;
 }
-
-#logo {
-	position:absolute;
-	bottom:1em;
-	right:1em;
-}
-
-@media screen and (max-width: 480px){
-	#logo {
-		position:relative;
-		bottom:inherit;
-		right:inherit;
-		margin-top:1em;
-	}
-
-}
